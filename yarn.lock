@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+construct-style-sheets-polyfill@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/construct-style-sheets-polyfill/-/construct-style-sheets-polyfill-2.3.3.tgz#29b7463a08e2206badd9ec189b01ed3820360267"
+  integrity sha512-vXEBN4eU5TE/N3nHOeQLOg6WYSLw663b5b87XI1xbBc7p6tIETveG8dVdlPykl58BFHpWfHxk2a4mk1021bGdw==
+
 lit-html@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.1.2.tgz#2e3560a7075210243649c888ad738eaf0daa8374"
