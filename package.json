@@ -1,0 +1,15 @@
+{
+  "name": "movajs",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "mskorokhodov/movajs",
+  "author": {
+    "name": "Michael Skorokhodov",
+    "email": "mskorokhodov@gbsfo.com"
+  },
+  "dependencies": {
+    "lit-html": "^1.1.2",
+    "lodash": "^4.17.15"
+  }
+}
