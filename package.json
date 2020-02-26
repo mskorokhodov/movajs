@@ -4,13 +4,22 @@
   "main": "index.js",
   "license": "MIT",
   "repository": "mskorokhodov/movajs",
+  "scripts": {
+    "example": "node_modules/.bin/webpack-dev-server -d"
+  },
   "author": {
     "name": "Michael Skorokhodov",
     "email": "mskorokhodov@gbsfo.com"
   },
   "dependencies": {
-    "construct-style-sheets-polyfill": "^2.3.3",
-    "lit-html": "^1.1.2",
-    "lodash": "^4.17.15"
+    "lit-html": "^1.1.2"
+  },
+  "devDependencies": {
+    "color": "^3.1.2",
+    "lodash": "^4.17.15",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.2",
+    "webpack-dev-server": "^3.7.2"
   }
 }
