@@ -42,6 +42,7 @@ import { createStore } from 'movajs';
 const store = createStore({ data: { items: [] } });
 
 export default useItems = (context) => {
+  // subscribe element on store
   context.useStore(context);
 
   const getItems = (...itemsToAdd) => store.data.items;
@@ -62,11 +63,11 @@ import { defineElement, html } from 'movajs';
 import useItems from '../store/items';
 
 export default defineElement('mova-element1', (context) => {
+  // get store api
   const { getItems, addItems } = useItems(context);
   
   addItems('Item #1', 'Item #2', 'Item #3');
 
-  // render function
   return () => html`
     <div>${JSON.stringify(getItems())}</div>
   `;
@@ -79,9 +80,9 @@ import { defineElement, html, createStore } from 'movajs';
 import useItems from '../store/items';
 
 export default defineElement('mova-element2', (context) => {
+  // get store api
   const { getItems } = useItems(context);
 
-  // render function
   return () => html`
     <div>${JSON.stringify(getItems())}</div>
   `;
