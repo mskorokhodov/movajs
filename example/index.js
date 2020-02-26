@@ -9,6 +9,6 @@ export default defineElement('mova-app', (context) => {
   context.useLifecycle('updated', () => console.log('[updated]', getTimerElement().textContent));
 
   return () => html`
-    <div ref=${setTimerElement}>(timer: ${getTimer()})</div>
+    <div>${JSON.stringify(getUsers())}</div>
   `;
 });
