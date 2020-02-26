@@ -37,14 +37,14 @@ export default defineElement('mova-counter', (context) => {
   const { get: getTimerElement, set: setTimerElement } = context.useReference(null);
 
   const handleMounted = () => {
-    setInterval(() => setTimer(getTimer() + 1), getTimerInterval())
+    setInterval(() => setTimer(getTimer() + 1), getTimerInterval());
   };
   // subscribes on lifecycle
   context.useLifecycle('mounted', handleMounted);
 
   const handleUpdated = () => {
     const info = { timer: getTimer(), timerInterval: getTimerInterval(), timerElement: getTimerElement() };
-    console.log('[updated]', info)
+    console.log('[updated]', info);
   };
   // subscribes on lifecycle
   context.useLifecycle('updated', handleUpdated);
@@ -74,7 +74,7 @@ const store = createStore({ data: { items: [] } });
 
 export default useItems = (context) => {
   // subscribe element on store
-  context.useStore(context);
+  context.useStore(store);
 
   const getItems = (...itemsToAdd) => store.data.items;
 
